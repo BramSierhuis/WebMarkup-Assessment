@@ -1,0 +1,4 @@
+student name: Bram Sierhuis
+student number: 640289
+student class: INF1C
+URL student GitHub repository: https://github.com/BramSierhuis/WebMarkup-Assessment
