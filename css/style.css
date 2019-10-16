@@ -1,0 +1,143 @@
+html{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background: #FFF;
+}
+
+body{
+    background: #FFF;
+    margin: auto;
+    width: 1200px;
+    padding: 2em;
+}
+
+img{
+    max-width: 100%;
+}
+
+.wrapper{
+    display: grid;
+    grid-gap: 0.1em;
+}
+
+/*Navbar*/
+nav ul {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+nav a, nav p {
+    background: #ddd;
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+nav p{
+    margin: 0;
+}
+
+nav a:hover {
+    background: #333;
+    color: #fff;
+}
+
+.main{
+    display: grid;
+    grid-gap: 2em;
+    grid-template-areas: 
+        'mainHeader mainHeader'
+        'article-a article-b'
+        'mainFooter mainFooter';
+    background: #e1e1e1;
+    margin: 1em 0em 1em 0em;
+}
+
+.main h3{
+    font-size: 2.4em;
+    margin-bottom: 0;
+}
+
+/*MainSection*/
+.main header{
+    grid-area: mainHeader;
+    text-align: center;
+}
+
+.main footer{
+    grid-area: mainFooter;
+    text-align: center;
+}
+
+.article{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    padding: 1em;
+}
+
+.article-a{
+    grid-area: article-a;
+}
+
+.article-b{
+    grid-area: article-b;
+}
+
+.article img, .info img{
+    padding: 0;
+    width: 100%;
+}
+
+.secondary{
+    display: grid;
+    grid-gap: 2em;
+    grid-template-areas: 
+        'secondaryHeader secondaryHeader'
+        'info-a info-b'
+        'info-c info-d'
+        'secondaryFooter secondaryFooter';
+    background: #e1e1e1;
+    margin: 1em 0em 1em 0em;
+}
+
+.secondary h3{
+    font-size: 2.4em;
+    margin-bottom: 0;
+}
+
+.secondary header{
+    grid-area: secondaryHeader;
+    text-align: center;
+}
+
+.secondary footer{
+    grid-area: secondaryFooter;
+    text-align: center;
+}
+
+.info-a{
+    grid-area: info-a;
+}
+
+.info-b{
+    grid-area: info-b;
+}
+
+.info-c{
+    grid-area: info-c;
+}
+
+.info-d{
+    grid-area: info-d;
+}
