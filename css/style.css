@@ -191,21 +191,40 @@ nav a:hover {
     padding-left: 2%;
 }
 
+/*List items*/
 .list-a{
     grid-area: list-a;
 }
-
 .list-b{
     grid-area: list-b;
     background: #F5F5F5;
 }
-
 .list-c{
     grid-area: list-c;
 }
-
 .list-d{
     grid-area: list-d;
+    background: #F5F5F5;
+}
+.list-e{
+    grid-area: list-e;
+}
+.list-f{
+    grid-area: list-f;
+    background: #F5F5F5;
+}
+.list-g{
+    grid-area: list-g;
+}
+.list-h{
+    grid-area: list-h;
+    background: #F5F5F5;
+}
+.list-i{
+    grid-area: list-i;
+}
+.list-j{
+    grid-area: list-j;
     background: #F5F5F5;
 }
 
