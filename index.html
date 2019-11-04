@@ -161,6 +161,44 @@
                </footer>
            </section>
            
+            <!--Contact-->
+           <section id="contactcontent" class="contact">
+               <header>
+                   <h3>Contact</h3>
+               </header>
+                
+                <form action="http://witan.nl/inholland/testform.php" method="post">
+                    <fieldset id="personalInfo">  
+                        <legend>
+                            Formulier
+                        </legend>
+                        <label for="namefield">Voor + Achternaam</label>
+                        <input
+                            id="namefield"
+                            name="name"
+                            type="text"
+                            placeholder="Naam"
+                        />
+                        
+                        <label for="mailfield">Emailadres</label>                       
+                        <input
+                            id="mailfield"
+                            name="email"
+                            type="email"
+                            placeholder="Email"
+                        />
+                            
+                        <label for="messagefield">Uw bericht</label>
+                        <textarea
+                            id="messagefield"
+                            name="message"
+                            placeholder="Typ hier..."
+                        ></textarea>
+                    </fieldset>  
+                    <input type="submit" value="Verzenden"/>
+                </form>
+           </section>
+           
            <footer>
                <p>&copy; Bram Sierhuis</p>
            </footer>
