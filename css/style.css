@@ -10,12 +10,17 @@ body{
     background: #FFFFFF;
     margin: auto;
     width: 1200px;
-    padding: 2em 2em 0em 2em;
 }
 
 .wrapper{
     display: grid;
     grid-gap: 0.1em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(100, auto);
+}
+
+.wrapper section{
+    padding: 1.5em
 }
 
 img{
@@ -24,29 +29,31 @@ img{
 
 
 /*Navbar*/
-nav ul {
-    display: grid;
-    grid-gap: 20px;
-    padding: 0;
-    list-style: none;
-    grid-template-columns: repeat(7, 1fr);
+nav{
+    grid-column-start: 1;
+    grid-column-end: 16;
+    background-color: #AAAAAA;
 }
 
-nav a, nav p {
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+nav li{
+    float: left;
+}
+
+nav a{
     background: #AAAAAA;
     display: block;
-    text-decoration: none;
-    padding: 0.8em;
+    color: white;
     text-align: center;
-    text-transform: uppercase;
-    font-size: 1.1em;
-    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-    min-height: 60%;
+    padding: 14px 16px;
+    text-decoration: none;
     color: #000000;
-}
-
-nav p{
-    margin: 0;
 }
 
 nav a:hover {
@@ -57,19 +64,10 @@ nav a:hover {
 
 /*Article layout*/
 .article{
-    display: grid;
     align-items: center;
     justify-items: center;
     box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
     padding: 1em;
-}
-
-.article-a{
-    grid-area: article-a;
-}
-
-.article-b{
-    grid-area: article-b;
 }
 
 .article img, .info img{
@@ -77,15 +75,20 @@ nav a:hover {
     width: 50%;
 }
 
+
+/*Page header*/
+#pageheader{    
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
 /*Main section*/
 .main{
-    display: grid;
-    grid-gap: 2em;
-    grid-template-areas: 
-        'mainHeader mainHeader'
-        'article-a article-b'
-        'mainFooter mainFooter';
-    margin: 1em 0em 1em 0em;
+    grid-row: 3;
+    grid-column-start: 1;
+    grid-column-end: 16;
 }
 
 .main h3{
@@ -94,25 +97,17 @@ nav a:hover {
 }
 
 .main header{
-    grid-area: mainHeader;
     text-align: center;
 }
 
 .main footer{
-    grid-area: mainFooter;
     text-align: center;
 }
 
 
 /*Secondary section*/
 .secondary{
-    display: grid;
-    grid-gap: 2em;
-    grid-template-areas: 
-        'secondaryHeader secondaryHeader'
-        'info-a info-b'
-        'info-c info-d'
-        'secondaryFooter secondaryFooter';
+    grid-row: 4;
     margin: 1em 0em 1em 0em;
 }
 
@@ -122,58 +117,26 @@ nav a:hover {
 }
 
 .secondary header{
-    grid-area: secondaryHeader;
     text-align: center;
 }
 
 .secondary footer{
-    grid-area: secondaryFooter;
     text-align: center;
 }
 
-    /*Grid Areas*/
-.info-a{
-    grid-area: info-a;
-}
-.info-b{
-    grid-area: info-b;
-}
-.info-c{
-    grid-area: info-c;
-}
-.info-d{
-    grid-area: info-d;
-}
-
-
 /*Sport section*/
 .sport{
-    display: grid;
+    grid-row: 5;
     margin: 1em 0em 1em 0em;
-    grid-template-areas: 
-        'sportHeader'
-        'list-a'
-        'list-b'
-        'list-c'
-        'list-d'
-        'list-e'
-        'list-f'
-        'list-g'
-        'list-h'
-        'list-i'
-        'list-j'
-        'sportFooter';
 }
 
 .sport header{
-    grid-area: sportHeader;
     text-align: center;
     font-size: 2.4em;
     margin: 0;
 }
 
 .sport footer{
-    grid-area: sportFooter;
     text-align: center;
 }
 
@@ -196,51 +159,11 @@ nav a:hover {
     padding-left: 2%;
 }
 
-    /*List items*/
-.list-a{
-    grid-area: list-a;
-}
-.list-b{
-    grid-area: list-b;
-    background: #F5F5F5;
-}
-.list-c{
-    grid-area: list-c;
-}
-.list-d{
-    grid-area: list-d;
-    background: #F5F5F5;
-}
-.list-e{
-    grid-area: list-e;
-}
-.list-f{
-    grid-area: list-f;
-    background: #F5F5F5;
-}
-.list-g{
-    grid-area: list-g;
-}
-.list-h{
-    grid-area: list-h;
-    background: #F5F5F5;
-}
-.list-i{
-    grid-area: list-i;
-}
-.list-j{
-    grid-area: list-j;
-    background: #F5F5F5;
-}
 
 
 /*Contact section*/
 .contact{
-    display: grid;
-    grid-gap: 2em;
-    grid-template-areas: 
-        'contactHeader'
-        'form';
+    grid-row: 6;
     margin: 1em 0em 1em 0em;
 }
 
@@ -250,12 +173,7 @@ nav a:hover {
 }
 
 .contact header{
-    grid-area: contactHeader;
     text-align: center;
-}
-
-.contact form{
-    grid-area: form;
 }
 
 input[type=text], input[type=email],textarea {
@@ -303,6 +221,12 @@ input[type=submit]:hover {
     text-align: center;
     font-size: 2em;
     margin-top: 0;
+}
+
+
+/*Footer*/
+#pagefooter{
+    grid-row: 7;
 }
 
 
