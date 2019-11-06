@@ -209,6 +209,12 @@ input[type=submit]:hover {
     color: #FFFFFF;
 }
 
+legend{
+    background: #F5F5F5;
+    padding: .3em;
+    border: 2px black solid;
+}
+
 
 /*footer*/
 #pagefooter{
