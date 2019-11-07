@@ -88,17 +88,13 @@ nav a:hover {
 
 
 /*Header*/
-#pageheader h1{
-    font-size: 4em;
-    margin-top: 2%;
-    margin-bottom: 0;
+#pageheader{
+    margin-top: 2em;
     text-align: center;
-}
+} 
 
-#pageheader h2{
-    text-align: center;
-    font-size: 2em;
-    margin-top: 0;
+#pageheader img{
+    width: 70%;
 }
 
 
