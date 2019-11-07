@@ -29,7 +29,7 @@ nav ul {
 }
 
 nav li{
-    float: left;
+    float: right;
 }
 
 nav a{
@@ -137,6 +137,9 @@ nav a:hover {
 
 
 /*Sport section*/
+.sport h3{
+    margin-bottom: 0.3em;
+}
 .sport header{
     text-align: center;
     font-size: 2.4em;
@@ -219,7 +222,6 @@ legend{
 /*footer*/
 #pagefooter{
     padding-left: 1em;
-    background: #AAAAAA;
 }
 
 /*Background video*/
