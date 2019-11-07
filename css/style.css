@@ -58,6 +58,11 @@ nav a:hover {
     color: #FFFFFF;
 }
 
+#homeBtn{
+    float: left;
+    font-weight: bold;
+}
+
 
 /*Article layout*/
 .article{
