@@ -16,6 +16,7 @@ body{
     padding: 1.5em
 }
 
+
 /*Navbar*/
 nav{
     background-color: #AAAAAA;
@@ -66,7 +67,7 @@ nav a:hover {
     margin-top: 2em;
 }
 
-.article img, .info img{
+.article img, .gridArticle img, .info img{
     padding: 0;
     width: 50%;
 }
@@ -76,14 +77,26 @@ nav a:hover {
     margin: 0 auto;
 }
 
-.article h4{
+.article h4, .gridArticle h4{
     text-align: center;
     margin: 0.8em 0 0.2em 0;
     font-size: 1.2em;
 }
 
-.article p{
+.article p, .gridArticle p{
     margin: 0;
+}
+
+.gridArticle{
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.gridArticle img{
+    float: left;
+    margin-right: 2%;
+    width: 30%;
 }
 
 
@@ -99,16 +112,16 @@ nav a:hover {
 
 
 /*Main section*/
-.main h3{
+#maincontent h3{
     font-size: 2.4em;
     margin-bottom: 0.4em;
 }
 
-.main header{
+#maincontent header{
     text-align: center;
 }
 
-.main footer{
+#maincontent footer{
     text-align: center;
     clear: both;
     padding-top: 0.2em;
@@ -116,32 +129,87 @@ nav a:hover {
 
 
 /*Secondary section*/
-.secondary h3{
+#secondarycontent h3{
     font-size: 2.4em;
     margin-bottom: 0.4em;
 }
 
-.secondary header{
+#secondarycontent header{
     text-align: center;
 }
 
-.secondary footer{
+#secondarycontent footer{
     text-align: center;
     clear: both;
     padding-top: 0.2em;
 }
 
 
+/*Referral section*/
+#referralcontent{
+    /*The -ms- tags are used so the grid can run on IE*/
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#referralcontent h3{
+    font-size: 2.4em;
+    margin-bottom: 0.4em;
+}
+
+#referralcontent header{
+    text-align: center;
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;    
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+}
+
+#referralcontent article{
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;    
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+}
+
+#referralcontent aside{
+    -ms-grid-column: 3;   
+    -ms-grid-row: 2;    
+    -ms-grid-column-span: 1;   
+    grid-column: 3/4;
+}
+
+#referralcontent .asideHeader{
+    font-size: 1em;
+    margin: 0;
+}
+
+#referralcontent .margin-top{
+    margin-top: 1em;
+}
+
+#referralcontent footer{
+    text-align: center;
+    padding-top: 0.2em;
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+}
+
+
 /*Sport section*/
-.sport h3{
+#sportcontent h3{
     margin-bottom: 0.3em;
 }
-.sport header{
+#sportcontent header{
     text-align: center;
     font-size: 2.4em;
 }
 
-.sport footer{
+#sportcontent footer{
     text-align: center;
 }
 
