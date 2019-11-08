@@ -9,6 +9,7 @@ html{
     font-family: Arial, Helvetica, sans-serif;
     color: #000000;
     background: #FFFFFF;
+    font-size: 15pt;
 }
 
 body{
@@ -69,7 +70,7 @@ nav a:hover {
     padding: 1em;
     
     float: left;
-    width: 48.6%;
+    width: 48.2%;
     box-sizing: border-box;
 }
 
@@ -81,7 +82,7 @@ nav a:hover {
     margin-top: 2em;
 }
 
-.article img, .gridArticle img, .info img{
+.article img, .info img{
     padding: 0;
     width: 50%;
 }
@@ -94,7 +95,7 @@ nav a:hover {
 .article h4, .gridArticle h4{
     text-align: center;
     margin: 0.8em 0 0.2em 0;
-    font-size: 1.2em;
+    font-size: 15pt;
 }
 
 .article p, .gridArticle p{
@@ -110,14 +111,15 @@ nav a:hover {
 .gridArticle img{
     float: left;
     margin-right: 2%;
-    width: 30%;
+    width: 50%;
+    margin-bottom: 2%;
 }
 
 
 /*Header*/
 #pageheader{
-    font-family: 'Berlin Sans FB';
-    font-size: 2em;
+    font-family: 'Berlin Sans FB', "Lucida Grande", sans-serif;
+    font-size: 25pt;
     margin: 0;
     text-align: center;
 } 
@@ -138,7 +140,7 @@ nav a:hover {
 
 /*Main section*/
 #maincontent h3{
-    font-size: 2.4em;
+    font-size: 30pt;
     margin-bottom: 0.4em;
 }
 
@@ -155,7 +157,7 @@ nav a:hover {
 
 /*Secondary section*/
 #secondarycontent h3{
-    font-size: 2.4em;
+    font-size: 30pt;
     margin-bottom: 0.4em;
 }
 
@@ -180,7 +182,7 @@ nav a:hover {
 }
 
 #referralcontent h3{
-    font-size: 2.4em;
+    font-size: 30pt;
     margin-bottom: 0.4em;
 }
 
@@ -207,7 +209,7 @@ nav a:hover {
 }
 
 h5{
-    font-size: 1em;
+    font-size: 15pt;
     margin: 0;
 }
 
@@ -232,7 +234,7 @@ p + h5{
 
 #sportcontent header{
     text-align: center;
-    font-size: 2.4em;
+    font-size: 30pt;
 }
 
 #sportcontent footer{
@@ -250,7 +252,7 @@ p + h5{
 }
 
 .list img{
-    width: 10%;
+    width: 15%;
 }
 
 .list-img-left{
@@ -266,7 +268,7 @@ p + h5{
 
 /*Contact section*/
 .contact h3{
-    font-size: 2.4em;
+    font-size: 30pt;
     margin-bottom: 0;
 }
 
@@ -281,6 +283,7 @@ input[type=text], input[type=email],textarea {
     border-radius: 4px;
     box-sizing: border-box;
     margin: 0 0 1.5em 0;
+    font-size: 15pt;
 }
 
 textarea{
@@ -300,6 +303,7 @@ textarea ~ button {
     margin-bottom: 1em;
     box-shadow: 0 0.1em 0.5em #444444;
     float: right;
+    font-size: 15pt;
 }
 
 textarea ~ button:hover {
