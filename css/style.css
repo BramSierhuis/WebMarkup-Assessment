@@ -65,7 +65,7 @@ nav a:hover {
 
 /*Article layout*/
 .article{
-    box-shadow: 0 1px 5px #444444;
+    box-shadow: 0 0.1em 0.5em #444444;
     padding: 1em;
     
     float: left;
@@ -102,7 +102,7 @@ nav a:hover {
 }
 
 .gridArticle{
-    box-shadow: 0 1px 5px #444444;
+    box-shadow: 0 0.1em 0.5em #444444;
     padding: 1em;
     box-sizing: border-box;
 }
@@ -245,7 +245,7 @@ p + h5{
 
 .list {
     padding: 1em;
-    box-shadow: 0 1px 5px #444444;
+    box-shadow: 0 0.1em 0.5em #444444;
     margin-bottom: 0.5%;
 }
 
@@ -298,7 +298,7 @@ textarea ~ button {
     cursor: pointer;
     margin-top: 1em;
     margin-bottom: 1em;
-    box-shadow: 0 1px 5px #444444;
+    box-shadow: 0 0.1em 0.5em #444444;
     float: right;
 }
 
@@ -313,6 +313,20 @@ legend{
     border: 2px black solid;
 }
 
+
+/*Cookie Statement*/
+#cookieContainer{
+    position: fixed;
+    right: 30%;
+    left: 30%;
+    bottom: 1%;
+    text-align: center;
+    background: #F5F5F5;
+    z-index: 2;
+    padding: 0;
+    border-radius: 0.5em;
+    box-shadow: 0 0.1em 0.5em #444444;
+}
 
 /*footer*/
 #pagefooter p{
