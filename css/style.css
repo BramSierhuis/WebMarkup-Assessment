@@ -32,7 +32,7 @@ nav{
     background-color: #AAAAAA;
 }
 
-nav ul {
+nav > ul {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -46,7 +46,6 @@ nav li{
 nav a{
     background: #AAAAAA;
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -207,12 +206,12 @@ nav a:hover {
     grid-column: 3/4;
 }
 
-#referralcontent .asideHeader{
+h5{
     font-size: 1em;
     margin: 0;
 }
 
-#referralcontent .margin-top{
+p + h5{
     margin-top: 1em;
 }
 
@@ -230,6 +229,7 @@ nav a:hover {
 #sportcontent h3{
     margin-bottom: 0.3em;
 }
+
 #sportcontent header{
     text-align: center;
     font-size: 2.4em;
@@ -289,7 +289,7 @@ textarea{
     height: 8em;
 }
 
-input[type=submit] {
+textarea ~ button {
     background: #AAAAAA;
     color: #000000;
     padding: 15px 22px;
@@ -302,7 +302,7 @@ input[type=submit] {
     float: right;
 }
 
-input[type=submit]:hover {
+textarea ~ button:hover {
     background: #707070;
     color: #FFFFFF;
 }
@@ -331,6 +331,7 @@ legend{
 }
 
 #backgroundVideo {
+    margin: auto;
     position: fixed;
     right: 0;
     bottom: 0;
