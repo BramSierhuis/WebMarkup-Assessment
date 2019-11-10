@@ -356,3 +356,129 @@ legend{
     min-height: 100%;
     z-index: -1;
 }
+
+/*Tablet*/
+@media screen and (max-width: 1179px) and (min-width: 480px){
+    #bazaar{
+        content: url("../img/bazaar300x300.png");
+    }
+    
+    #tata{
+        content: url("../img/tata300x300.png");
+    }
+    
+    #heemskerk{
+        content: url("../img/heemskerk300x300.png");
+    }
+    
+    #strand{
+        content: url("../img/strand300x300.png");
+    }
+    
+    #bjjLogo{
+        content: url("../img/logoBJJ300x300.png");
+    }
+    
+    #atletiek{
+        content: url("../img/atletiek150x150.png");
+    }
+    
+    #voetbal{
+        content: url("../img/demvoetbal150x150.png");
+    }
+    
+    #hockey{
+        content: url("../img/hockey150x150.png");
+    }
+    
+    #schaatsen{
+        content: url("../img/schaatsen150x150.png");
+    }
+    
+    #zwemmen{
+        content: url("../img/zwemmen150x150.png");
+    }
+    
+    #bjj{
+        content: url("../img/bjj150x150.png");
+    }
+    
+    #rapidity{
+        content: url("../img/tafeltennis150x150.png");
+    }
+    
+    #volleybal{
+        content: url("../img/volleybal150x150.png");
+    }
+    
+    #turnen{
+        content: url("../img/turnen150x150.png");
+    }
+    
+    #turnenSSS{
+        content: url("../img/turnenSSS150x150.png");
+    }
+}
+    
+/*Mobile*/
+@media screen and (max-width: 479px){
+    #bazaar{
+        content: url("../img/bazaar200x200.png");
+    }
+    
+    #tata{
+        content: url("../img/tata200x200.png");
+    }
+    
+    #heemskerk{
+        content: url("../img/heemskerk200x200.png");
+    }
+    
+    #strand{
+        content: url("../img/strand200x200.png");
+    }
+    
+    #bjjLogo{
+        content: url("../img/logoBJJ200x200.png");
+    }
+    
+    #atletiek{
+        content: url("../img/atletiek100x100.png");
+    }
+    
+    #voetbal{
+        content: url("../img/demvoetbal100x100.png");
+    }
+    
+    #hockey{
+        content: url("../img/hockey100x100.png");
+    }
+    
+    #schaatsen{
+        content: url("../img/schaatsen100x100.png");
+    }
+    
+    #zwemmen{
+        content: url("../img/zwemmen100x100.png");
+    }
+    
+    #bjj{
+        content: url("../img/bjj100x100.png");
+    }
+    
+    #rapidity{
+        content: url("../img/tafeltennis100x100.png");
+    }
+    
+    #volleybal{
+        content: url("../img/volleybal100x100.png");
+    }
+    
+    #turnen{
+        content: url("../img/turnen100x100.png");
+    }
+    
+    #turnenSSS{
+        content: url("../img/turnenSSS100x100.png");
+    }
+}
