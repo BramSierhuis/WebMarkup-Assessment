@@ -29,6 +29,10 @@ section{
 
 
 /*Navbar*/
+#lowRes{
+    display: none;
+}
+
 nav{
     background-color: #AAAAAA;
 }
@@ -358,7 +362,12 @@ legend{
 }
 
 /*Tablet*/
-@media screen and (max-width: 1179px) and (min-width: 480px){
+@media screen and (max-width: 1279px) and (min-width: 480px){
+    #backgroundVideo, #videoCopyright{
+        display: none;
+    }
+    
+    /*Rescale images*/
     #bazaar{
         content: url("../img/bazaar300x300.png");
     }
@@ -422,6 +431,60 @@ legend{
     
 /*Mobile*/
 @media screen and (max-width: 479px){
+    body{
+        width: 480px;
+    }
+    
+    #lowRes{
+        display: block;
+    }
+    
+    #highRes, #backgroundVideo, #videoCopyright{
+        display: none;
+    }
+    
+    .article{
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .gridArticle img{
+        width: 100%;
+    }
+    
+    #referralcontent{
+        /*The -ms- tags are used so the grid can run on IE*/
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    #referralcontent header{
+        text-align: center;
+        -ms-grid-column: 1;
+        -ms-grid-row: 1;    
+        -ms-grid-column-span: 3;
+        grid-row: 1;
+        grid-column: 1/1;
+    }
+
+    #referralcontent article{
+        -ms-grid-column: 1;
+        -ms-grid-row: 2;    
+        -ms-grid-column-span: 2;
+        grid-row: 2;
+        grid-column: 1/1;
+    }
+
+    #referralcontent aside{
+        -ms-grid-column: 3;   
+        -ms-grid-row: 3;    
+        -ms-grid-column-span: 1;   
+        grid-row: 3;
+        grid-column: 1/1;
+    }
+    
     #bazaar{
         content: url("../img/bazaar200x200.png");
     }
